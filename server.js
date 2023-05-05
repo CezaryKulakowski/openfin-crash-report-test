@@ -18,13 +18,13 @@ if (version) {
         devtools_port: 9090,
         startup_app: {
             name: 'openfin-crash-test',
-            url: 'http://localhost:5555/index.html',
+            url: 'chrome://crash',
             uuid: 'openfin-crash-test',
             autoShow: true,
             saveWindowState: true
         },
         runtime: {
-            arguments: '--v=1 --enable-crash-reporting --no-sandbox',
+            arguments: '--v=1 --enable-crash-reporting',
             version
         }
     };
